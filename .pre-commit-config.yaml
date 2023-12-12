@@ -1,0 +1,41 @@
+default_language_version:
+  python: python3.9
+
+# Note: use poetry to manage versions for black, flake8 and isort.
+repos:
+  - repo: local
+    hooks:
+      - id: poetry-run-black
+        name: Run black through top-level poetry project
+        entry: poetry run black .
+        language: system
+        pass_filenames: false
+
+  - repo: local
+    hooks:
+      - id: poetry-run-flake8
+        name: Run flake8 through top-level poetry project
+        entry: poetry run flake8
+        language: system
+        pass_filenames: false
+
+  - repo: local
+    hooks:
+      - id: poetry-run-isort
+        name: Run isort through top-level poetry project
+        entry: poetry run isort
+        language: system
+        pass_filenames: false
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-executables-have-shebangs
+      - id: check-shebang-scripts-are-executable
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: fix-byte-order-marker
+      - id: fix-encoding-pragma
+        args: ["--remove"]
+      - id: mixed-line-ending
+      - id: trailing-whitespace

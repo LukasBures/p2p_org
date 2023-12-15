@@ -14,6 +14,11 @@ According to the following sources it seems to me Hodlnaut's trading wallet:
 
 Tweet: The majority of Hodlnaut's funds flow to 0x99fd1378ca799ed6772fe7bcdc9b30b389518962, marked by Nansen as Hodlnaut's trading wallet. I traced a few large direct Hodlnaut deposits to here as well. For the time being, we will consider Nansen's tagging to be credible. (9/25)
 
+Other links: 
+- [hodlnaut](https://www.hodlnaut.com) staking solution 
+- [DUNE dashboard](https://dune.com/georgeai/0x99fd1378ca799ed6772fe7bcdc9b30b389518962-txns)
+- [dirtybubblemedia](https://www.dirtybubblemedia.com/p/hodlnaut-may-have-massive-undisclosed)
+- [financemagnates](https://www.financemagnates.com/cryptocurrency/terra-luna-how-these-7-wallets-brought-the-ecosystem-to-its-knees/)
 
 
 ## Smart contract function interactions with count > 100, by function:
